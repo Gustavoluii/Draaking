@@ -31,7 +31,7 @@ bot.on("message", async message => {
         if(!message.member.hasPermission("MANAGE_MESSAGES"));
         const ms = await message.channel.send("Calculando...");
         const clientms = ms.createdTimestamp - message.createdTimestamp;
-        ms.edit('Seu Ping: ' + clientms + 'ms / Meu Ping: ' + Math.round(bot.ping) + 'ms');
+        ms.edit('Meu Ping: ' + Math.round(bot.ping) + 'ms');
     }
 
 });
