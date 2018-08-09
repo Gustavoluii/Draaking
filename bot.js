@@ -10,7 +10,7 @@ bot.on("ready", function() {
 });
 
 bot.on('ready', () => {
-    bot.user.setGame(`<3;
+    bot.user.setGame(`<3`);
 });
 
 bot.on('guildMemberAdd', member => {
